@@ -10,7 +10,7 @@ packages = [{include = "cnb_def_pair_classifier"}]
 python = "^3.10"
 transformers = "^4.24.0"
 evaluate = "^0.3.0"
-torch = "^1.13.0"
+pytorch-lightning = "^1.8.3.post0"
 
 [tool.poetry.scripts]
 format                          = "tasks:format"
