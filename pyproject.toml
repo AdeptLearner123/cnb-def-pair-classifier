@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "cnb-def-pair-classifier"
+version = "0.1.0"
+description = ""
+authors = ["Nalu Zou"]
+readme = "README.md"
+packages = [{include = "cnb_def_pair_classifier"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+transformers = "^4.24.0"
+evaluate = "^0.3.0"
+
+[tool.poetry.scripts]
+format                          = "tasks:format"
+
+train                           = "cnb_def_pair_classifier.tasks.train:train"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
